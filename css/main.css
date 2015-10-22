@@ -729,7 +729,7 @@ br.break-on-desktop {
         left: 50%;
         margin-left: -4px;
         position: absolute;
-        webkit-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
         width: 8px;
     }
 
