@@ -1,140 +1,270 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta charset="utf-8">
-      <title>Warp4</title>
-      <meta name="description" content="">
-      <meta name="HandheldFriendly" content="True">
-      <meta name="MobileOptimized" content="320">
-      <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui,maximum-scale=1,user-scalable=no">
-      <meta http-equiv="cleartype" content="on">
+	<head>
+		<title>Warp4</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Header -->
+			<div id="header">
 
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-       <link rel="shortcut icon" href="images/World.ico">
-   </head>
-   <body class="page-designer">
-      <div class="wrapper">
-         <div class="hero padding10">
-            <div class="container">
-               <h1 class="headline">Warp4</h1>
-               <hr>
-               <p class="tagline">Information Technology and Geospatial Solutions
-                  <br class="break-on-desktop">
-                  <br class="break-on-mobile">
-               		<br class="break-on-mobile"> Simple tools to make your life easier
-               </p>
-            </div>
-         </div>
-         <header class="header">
-            <nav class="nav container pure-g">
-               <a href="#products" class="nav-item  is-active pure-u-1-3">
-                  <span class="label">Products</span> 
-               </a>
-               <a href="#services" class="nav-item  is-active pure-u-1-3">
-                  <span class="label">Services</span> 
-               </a>
-               <a href="#contact" class="nav-item  is-active pure-u-1-3">
-                  <span class="label">Contact</span> 
-               </a>
-            </nav>
-         </header>
+				<div class="top">
 
-         <div class="content">
-            <section class="container padding30">
-               <p>All of the software you need to solve your problems is freely available.</p>
-               <p>Warp4 assembles this software to provide the solutions you need.</p>
-            </section>
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Warp4</h1>
+							<p>Software Engineers</p>
+						</div>
 
-            <section class="companies-wrapper">
-               <div class="companies-scroller is-list pure-g js-company-wrapper">
-                  <div class="company-list-wrapper pure-u-3-4 pure-u-md-1-2">
-                     <ul class="company-list pure-g js-show-company-list">
-                        <li class="pure-u-1-3">
-                           <div class="company-item mapwindow js-company">
-                              <div class="item-header">
-                                  <a name="products"  href="pages/shape2earth4gis.html" title="Shape2Earth for GIS">
-                                 <h2 class="item-title">
-                                     <img src="./images/mapwindow2009.png" alt="MapWindow" width="160" height="30">
-                                 </h2>
-                                  <p class="item-name">Shape2Earth</p>
-                                  </a>
-                              </div>
-                              <div class="item-content">
-                                  <p>View and prepare your shapefiles in the free and open source MapWindow GIS.</p>
-                                  <p>Export the shapefiles into KML to view in Google Earth Desktop, or deploy your KML online with Google Maps.</p>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="pure-u-1-3">
-                           <div class="company-item engine js-company">
-                              <div class="item-header">
-                                  <a href="pages/shape2earthengine.html" title="Shape2Earth Engine">
-                                 <h2 class="item-title">
-                                     <img src="./images/world.png" alt="Shape2Earth Engine" width="42" height="42">
-                                 </h2>
-                                 <p class="item-name">Shape2Earth Engine</p>
-                                  </a>
-                              </div>
-                              <div class="item-content">
-                                 <p>A very simple yet powerful tool for converting shapefiles to KML, Shape2Earth Engine turns Google Earth Desktop into a light weight GIS.</p>
-                                  <p>Quickly and easily view data trends and prepare visual products to convey spatial information to you and your customers</p>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="pure-u-1-3">
-                           <div class="company-item googleearth js-company">
-                              <div class="item-header">
-                                  <a href="pages/image2earth.html" title="Shape2Earth Globe">
-                                 <h2 class="item-title">
-                                     <img src="./images/gearth.jpeg" alt="Google Earth" width="42" height="42"></h2>
-                                 <p class="item-name">Image2Earth</p>
-                                  </a>
-                              </div>
-                              <div class="item-content">
-                                 <p>Gain access to then best and most up to date satellite imagery from Google at the click of a button</p>
-                                  <p>Grab the Google Imagery you need to see the world as it actually is in your GIS software.</p>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
 
-               </div>
-            </section>
+								Prologue's nav expects links in one of two formats:
 
-             <section class="container padding30">
-                 <a name="services">Services</a>
-                 <p>Warp4 assembles free software to provide the solutions you need.</p>
-             </section>
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Software</span></a></li>
+								<li><a href="#pricing" id="pricing-link" class="skel-layers-ignoreHref"><span class="icon fa-dollar">Pricing</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Us</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/Warp_4_" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/warp4" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<!--<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>-->
+							<li><a href="https://www.linkedin.com/company/warp4" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:info@warp4.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+							<!--<li class="fa-envelope"><a href="mailto:info@warp4.com"  target="_blank">info@warp4.com</a></li>-->
+							<!--<li class="fa-twitter"><a href="https://twitter.com/Warp_4_" target="_blank">@Warp_4_</a></li>-->
+							<!--<li class="fa-facebook"><a href="https://www.facebook.com/warp4" target="_blank">facebook.com/warp4</a></li>-->
+							<!--<li class="fa-linkedin"><a href="https://www.linkedin.com/company/warp4" target="_blank">linkedin.com/company/warp4</a></li>-->
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Welcome to <strong>Warp4</strong></h2>
+								<p>This is the geospatial software you have been looking for</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Read More</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Image2Earth</h2>
+							</header>
+
+							<p>Quickly and easily select and save georectified satellite imagery for use in your GIS or CAD systems</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>Find your area of interest</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Select your area to export</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>Save your Imager</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Natoque Vitae</h3>
+										</header>
+									</article>
+								</div>
+
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Dolor Penatibus</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Orci Convallis</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Pricing -->
+				<section id="pricing" class="two">
+					<div class="container">
+
+						<header>
+							<h2>Pricing</h2>
+						</header>
+
+						<p>Simple Pricing</p>
+
+						<div class="row">
+							<div class="4u 12u$(mobile)">
+								<article class="item">
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<header>
+										<h3>1 Month</h3>
+									</header>
+								</article>
+							</div>
+							<div class="4u 12u$(mobile)">
+								<article class="item">
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<header>
+										<h3>3 Months</h3>
+									</header>
+								</article>
+
+							</div>
+
+							<div class="4u$ 12u$(mobile)">
+								<article class="item">
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<header>
+										<h3>12 Months</h3>
+									</header>
+								</article>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Us</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/garden-of-gods-sunset.jpg" alt="" style="height:300px" /></a>
+
+							<p>We are a group of engineers based out of Colorado Springs who love to write softare that makes
+							peoples jobs easier.</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Please feel free to contact us with any questions you may have.</p>
+
+							<ul class="icons">
+								<li><a href="https://twitter.com/Warp_4_" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/warp4" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/company/warp4" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:info@warp4.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+							</ul>
+
+							<!--<footer>-->
+								<!--<a href="mailto:info@warp4.com" class="button scrolly"><span class="icon fa-envelope">  Email Us </span></a>-->
+
+							<!--</footer>-->
 
 
-            <footer class="social footer pure-g">
-               <span class="social-item pure-u-1-3">
-                  <a href="https://twitter.com/tim_beermann" target="_blank" title="Twitter" class="social-icon">
 
-                      <i style="margin-top:50px; margin-left:50px;" class="fa fa-twitter fa-3x"></i>
-                  </a>
-               </span>
-               <span class="social-item pure-u-1-3">
-                  <a href="https://www.linkedin.com/in/timbeermann" target="_blank" title="LinkedIn" class="social-icon">
-                      <i style="margin-top:50px; margin-left:0px;" class="fa fa-linkedin-square fa-3x"></i>
-                  </a>
-               </span>
-               <span class="social-item pure-u-1-3">
-                  <a name="contact" href="mailto:info@shape2earth.com" target="_blank"  title="Email" class="social-icon">
-                      <i style="margin-top:50px; margin-left:0px;" class="fa fa-envelope-square fa-3x"></i>
-                  </a>
-               </span>
+                                <!--<form method="post" action="#">-->
+								<!--<div class="row">-->
+									<!--<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>-->
+									<!--<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>-->
+									<!--<div class="12u$">-->
+										<!--<textarea name="message" placeholder="Message"></textarea>-->
+									<!--</div>-->
+									<!--<div class="12u$">-->
+										<!--<input type="submit" value="Send Message" />-->
+									<!--</div>-->
+								<!--</div>-->
+							<!--</form>-->
 
-                <span hidden class="social-item pure-u-1-3">
+						</div>
+					</section>
 
-               </span>
-            </footer>
+			</div>
 
-         </div>
-      </div>
-    </body>
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Warp4. All rights reserved.</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
